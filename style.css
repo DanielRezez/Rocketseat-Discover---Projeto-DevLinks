@@ -10,24 +10,24 @@
 /*abaixo ficam as variáveis globais*/
 :root {
   --text-color: white;
-  --bg-url: url(./assets/dark-bg-mobile.jpg);
+  --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --stroke-color-hover: #FFFFFF;
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2); 
-  --switch-bg-url: url(./assets/MoonStars.svg);
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/light-bg-mobile.jpg);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --stroke-color-hover: #000000;
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);    
-  --switch-bg-url: url(./assets/Sun.svg);
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
@@ -40,6 +40,7 @@ body {
 
   /*background: color image repeat position/size*/
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vw;
 }
 
 body * {
@@ -48,7 +49,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   /*height precisa ser dinâmico*/
   /*margin: top right bottom left*/
   margin: 56px auto 32px auto;
@@ -116,15 +118,13 @@ body * {
 }
 
 /*links*/
-#links {
-  padding: 24px;
-}
-
 #links ul {
   display: flex;
+  align-items: center;
   flex-direction: column;
   list-style: none;
   gap: 16px;
+  padding: 24px;
 }
 
 #links ul li a{
@@ -185,5 +185,14 @@ body * {
   font-size: 14px;
 }
 
+/*media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg)
+  }
 
+  .light {
+    --bg-url: url(.assets/bg-desktop-light.jpg)
+  }
+}
 
