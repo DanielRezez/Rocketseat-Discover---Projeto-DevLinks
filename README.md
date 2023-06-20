@@ -1,7 +1,7 @@
 <h1 align="center"> DevLinks </h1>
 
 <p align="center">
-Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
+Projeto final feito no programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
 </p>
 
 <p align="center">
@@ -44,4 +44,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+Feito com ♥ por eu mesmo graças à Rocketseat :wave: [Participe da comunidade!](https://discord.gg/rocketseat)
