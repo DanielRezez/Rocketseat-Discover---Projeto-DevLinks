@@ -10,7 +10,7 @@
 /*abaixo ficam as variáveis globais*/
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --bg-url: url(./assets/bg-desktop.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --stroke-color-hover: #FFFFFF;
   --surface-color: rgba(255, 255, 255, 0.1);
@@ -22,7 +22,7 @@
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/bg-desktop-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --stroke-color-hover: #000000;
   --surface-color: rgba(0, 0, 0, 0.05);
@@ -42,7 +42,7 @@ body {
 
   /*background: color image repeat position/size*/
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vw;
+  height: 100vh;
 }
 
 body * {
@@ -130,15 +130,20 @@ body * {
 #links ul {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   list-style: none;
   gap: 16px;
   padding: 24px;
 }
 
+#links ul li {
+  width: 100%;
+  min-width: 312px;
+}
+
 #links ul li a{
   display: flex;
-  width: 312px;
   height: 56px;
   align-items: center;
   justify-content: center;
@@ -195,13 +200,13 @@ body * {
 }
 
 /*media queries*/
-@media (min-width: 700px) {
+@media (max-width: 768px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.jpg)
+    --bg-url: url(./assets/bg-mobile.jpg)
   }
 
   .light {
-    --bg-url: url(.assets/bg-desktop-light.jpg)
+    --bg-url: url(.assets/bg-mobile-light.jpg)
   }
 }
 
