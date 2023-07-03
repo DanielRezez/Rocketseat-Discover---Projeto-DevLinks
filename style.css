@@ -67,7 +67,9 @@ body * {
 
 #profile img {
   width: 112px;
+  border-radius: 50%;
   /*não precisa definir o height*/
+  border: 2px solid var(--stroke-color);
 }
 
 #profile p {
